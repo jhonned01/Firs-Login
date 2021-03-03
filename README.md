@@ -1,6 +1,6 @@
-## App Creada Para Probar la integracion en el Inicio de sesion
+## App Creada Para Probar la integracion en el Inicio de sesion con firebase
 
-Este es un ejemplo utilizando [Tailwind CSS](https://tailwindcss.com/) (v2) Utilizando Next.js. Para mas informacion acerca de la integracion [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+#Este es un ejemplo utilizando [Tailwind CSS](https://tailwindcss.com/), (v2) Utilizando Next.js. Para mas informacion acerca de la integracion [Next](https://nextjs.org/docs) y utilizando firebase [Firebase](https://firebase.google.com/docs).
 
 ## Deploy your own
 
