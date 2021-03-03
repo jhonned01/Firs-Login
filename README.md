@@ -1,21 +1,25 @@
 ## App Creada Para Probar la integracion en el Inicio de sesion con firebase
 
-#Este es un ejemplo utilizando [Tailwind CSS](https://tailwindcss.com/), (v2) Utilizando Next.js. Para mas informacion acerca de la integracion [Next](https://nextjs.org/docs) y utilizando firebase [Firebase](https://firebase.google.com/docs).
+Este es un ejemplo utilizando [Tailwind CSS](https://tailwindcss.com/), (v2) Utilizando Next.js. Para mas informacion acerca de la integracion [Next](https://nextjs.org/docs) y utilizando firebase [Firebase](https://firebase.google.com/docs).
 
-## Deploy your own
+## Deploy
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+## Como funfiona ?
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Requiere node.js 14.16.0 o superior , despues de descargar :
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+
 # or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+`npm install` para instalar  las dependencias.
+`npm run dev` para el entorno de desarrollo.
+`npm run build && npm run start` para el entorno de producción.
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Licencia
+
+MIT
