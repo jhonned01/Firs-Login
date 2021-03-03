@@ -1,6 +1,6 @@
-# Next.js + Tailwind CSS Example
+## App Creada Para Probar la integracion en el Inicio de sesion
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) (v2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Este es un ejemplo utilizando [Tailwind CSS](https://tailwindcss.com/) (v2) Utilizando Next.js. Para mas informacion acerca de la integracion [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 ## Deploy your own
 
