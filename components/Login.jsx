@@ -1,7 +1,7 @@
 import React from "react";
 import { VscAccount } from "react-icons/vsc";
 import { AiFillFacebook, AiFillGithub } from "react-icons/ai";
-import Menu from "./menu/index";
+import Menu from "./menu/Index";
 
 const Login = () => {
   return (
