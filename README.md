@@ -13,8 +13,6 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 Requiere node.js 14.16.0 o superior , despues de descargar :
 
 ```bash
-
-# or
 `npm install` para instalar  las dependencias.
 `npm run dev` para el entorno de desarrollo.
 `npm run build && npm run start` para el entorno de producción.
