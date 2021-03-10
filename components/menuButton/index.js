@@ -3,7 +3,7 @@ import Link from "next/link";
 const index = ({ children, icon }) => {
   return (
     <li className="text-gray-700 font-bold py-1">
-      <Link href="/">
+      <Link href="/nota">
         <a className="px-4 flex justify-end border-r-4 border-red-400">
           {children} {icon}
         </a>

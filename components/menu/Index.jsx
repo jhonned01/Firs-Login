@@ -3,6 +3,7 @@ import { FcAbout } from "react-icons/fc";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuButton from "../menuButton/index";
+import Link from "next/link";
 const Index = ({ children }) => {
   const [burger, setburger] = useState(true);
 
@@ -16,7 +17,9 @@ const Index = ({ children }) => {
         <nav className="text-right">
           <div className="flex justify-between items-center ">
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-              <a href="/">Menu</a>
+              <Link href="/navBar">
+                <a>Menu</a>
+              </Link>
             </h1>
             <div className="px-4 cursor-pointer md:hidden">
               <button onClick={handleClick}>
@@ -34,7 +37,7 @@ const Index = ({ children }) => {
       <div className="  border-b-2 border-black md:bg-red-600 md:col-span-2">
         crep que voy a hacer la session aca
       </div>
-      <main className="px-16 py-6 md:col-span-2 bg-gray-100">
+      <main className="md:col-span-2 bg-gray-100">
         <div className="flex justify-center md:justify-end">{children}</div>
       </main>
     </div>

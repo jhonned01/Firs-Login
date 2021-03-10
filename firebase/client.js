@@ -22,15 +22,24 @@ export const LobginWithGItHub = () => {
 };
 
 export const LobginWithFacebook = () => {
-  const provider = new firebase.auth.FacebookAuthProvider();
+  const providerFacebook = new firebase.auth.FacebookAuthProvider();
 
-  return firebase.auth().signInWithPopup(provider);
+  return firebase.auth().signInWithPopup(providerFacebook);
 };
 
-export default firebase;
+export const OnAuthStateChange = (onChange) => {
+  const normalizedUser = firebase.auth().onAuthStateChanged((user) => {
+    onChange(normalizedUser);
+  });
+};
 
-export const database = firebase.database();
-export const auth = firebase.auth();
-export const storage = firebase.storage();
-export const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
-export const messaging = firebase.messaging();
+const mapUserFromFirebaseAuth = (user) => {
+  const { additionalUserInfo } = user;
+  const { username, profile } = additionalUserInfo;
+  const { avatar_url, blog } = profile;
+  return {
+    avatar: avatar_url,
+    username,
+    url: blog,
+  };
+};
