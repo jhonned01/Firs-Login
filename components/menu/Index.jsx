@@ -30,16 +30,16 @@ const Index = ({ children }) => {
           </div>
           <ul className={`text-sm mt-6 ${burger ? "hidden" : ""} md:block`}>
             <MenuButton icon={<AiFillHome className="ml-2 " size={20} />}>
-              Home
+              Notes:
             </MenuButton>
           </ul>
         </nav>
       </div>
-      <div className=" border-b-2 border-black bg-red-600 md:col-span-2">
+      <div className=" my-6">
         <Profiler />
       </div>
-      <main className="md:col-span-2 bg-gray-100">
-        <div className="flex justify-center md:justify-end">{children}</div>
+      <main className="md:col-span-2 bg-gray-900">
+        <div className="">{children}</div>
       </main>
     </div>
   );

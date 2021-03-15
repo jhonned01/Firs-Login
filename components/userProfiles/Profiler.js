@@ -12,8 +12,8 @@ const Profiler = () => {
 
   return (
     <>
-      <div className="   border-b-2 border-black border-solid">
-        <div className=" grid md:grid-cols-2  md:">
+      <div className=" fixed md:left-1/3 top-0 right-0 ">
+        <div className=" grid grid-cols-2 bg-blue-500">
           <div className="">algp</div>
           <div className="  ">
             <div className="flex justify-end ">
