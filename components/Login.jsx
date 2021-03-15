@@ -12,9 +12,7 @@ const Login = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (User) {
-      router.push("/navBar");
-    }
+    User && router.replace("/navBar");
   }, [User]);
 
   const handleClickFace = () => {
@@ -43,8 +41,8 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-gray-300">
-      <section className="grid place-items-center place-content-center h-screen bg-gray-200 sm:bg-white sm:max-w-xl  sm:border-2 sm:m-auto ">
+    <div className="bg-gray-400 ">
+      <section className="grid place-items-center place-content-center h-screen bg-gray-400 sm:bg-red-400 sm:max-w-xl  sm:border-2 sm:rounded-sm sm:mx-auto">
         <VscAccount size={50} color={"black"} />
 
         <h1 className="text-3xl my-4 ">

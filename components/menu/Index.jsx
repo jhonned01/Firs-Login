@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuButton from "../menuButton/index";
 import Link from "next/link";
+import Profiler from "../userProfiles/Profiler";
 const Index = ({ children }) => {
   const [burger, setburger] = useState(true);
 
@@ -13,7 +14,7 @@ const Index = ({ children }) => {
 
   return (
     <div className="grid md:grid-cols-3    ">
-      <div className="md:col-span-1 md:flex md:justify-end md:bg-blue-500 md:row-span-3">
+      <div className=" md:col-span-1 md:flex md:justify-end bg-gray-100 md:row-span-3">
         <nav className="text-right">
           <div className="flex justify-between items-center ">
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
@@ -34,8 +35,8 @@ const Index = ({ children }) => {
           </ul>
         </nav>
       </div>
-      <div className="  border-b-2 border-black md:bg-red-600 md:col-span-2">
-        crep que voy a hacer la session aca
+      <div className=" border-b-2 border-black bg-red-600 md:col-span-2">
+        <Profiler />
       </div>
       <main className="md:col-span-2 bg-gray-100">
         <div className="flex justify-center md:justify-end">{children}</div>

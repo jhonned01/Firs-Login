@@ -2,20 +2,24 @@ import { Children, createContext, useState } from "react";
 
 const initialState = {};
 const UserContext = createContext(initialState);
-const { Provider, Consumer } = UserContext;
+const { Provider } = UserContext;
 
 function UserProvider({ children }) {
   const [User, setUser] = useState(null);
+  const [UserCredential, setUserCredential] = useState(null);
 
   const Login = (User) => {
-    setUser(User);
     const credential = User.credential;
-    const token = credential.accessToken;
+    setUser(User);
+    const UserInto = User.user;
+    setUserCredential(UserInto);
     console.log("2===================================");
     console.log(User);
     console.log("====================================");
   };
 
-  return <Provider value={{ Login, User }}>{children}</Provider>;
+  return (
+    <Provider value={{ Login, User, UserCredential }}>{children}</Provider>
+  );
 }
 export { UserContext, UserProvider };
