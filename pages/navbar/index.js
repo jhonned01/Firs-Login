@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { UserContext } from "../context/UserContext";
-import Menu from "../components/menu/Index";
+import { UserContext } from "../../context/UserContext";
+import Menu from "../../components/menu/Index.jsx";
 import { useRouter } from "next/router";
 
 const navBar = () => {

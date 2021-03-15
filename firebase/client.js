@@ -32,14 +32,3 @@ export const OnAuthStateChange = (onChange) => {
     onChange(normalizedUser);
   });
 };
-
-const mapUserFromFirebaseAuth = (user) => {
-  const { additionalUserInfo } = user;
-  const { username, profile } = additionalUserInfo;
-  const { avatar_url, blog } = profile;
-  return {
-    avatar: avatar_url,
-    username,
-    url: blog,
-  };
-};

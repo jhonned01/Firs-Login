@@ -12,10 +12,10 @@ const Profiler = () => {
 
   return (
     <>
-      <div className="fixed">
-        <div className=" grid grid-cols-2 w-screen max-w-full md:max-w-3/4">
+      <div className="   border-b-2 border-black border-solid">
+        <div className=" grid md:grid-cols-2  md:">
           <div className="">algp</div>
-          <div>
+          <div className="  ">
             <div className="flex justify-end ">
               <section
                 className={` ${

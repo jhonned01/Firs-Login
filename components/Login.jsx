@@ -12,7 +12,7 @@ const Login = () => {
   const router = useRouter();
 
   useEffect(() => {
-    User && router.replace("/navBar");
+    User && router.replace("/navbar");
   }, [User]);
 
   const handleClickFace = () => {
