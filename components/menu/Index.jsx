@@ -28,18 +28,22 @@ const Index = ({ children }) => {
               </button>
             </div>
           </div>
-          <ul className={`text-sm mt-6 ${burger ? "hidden" : ""} md:block`}>
+          <ul
+            className={`text-sm mt-3 md:mt-6 ${
+              burger ? "hidden" : ""
+            } md:block`}
+          >
             <MenuButton icon={<AiFillHome className="ml-2 " size={20} />}>
               Notes:
             </MenuButton>
           </ul>
         </nav>
       </div>
-      <div className=" my-6">
+      <div className=" md:my-6 ">
         <Profiler />
       </div>
-      <main className="md:col-span-2 bg-gray-900">
-        <div className="">{children}</div>
+      <main className=" mt-15 md:col-span-2 bg-gray-900">
+        <div className="mt-12 md:m-0 ">{children}</div>
       </main>
     </div>
   );
