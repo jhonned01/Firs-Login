@@ -13,10 +13,10 @@ const Index = ({ children }) => {
   };
 
   return (
-    <div className="grid md:grid-cols-3    ">
+    <div className="fixed grid md:grid-cols-3   left-0 right-0  ">
       <div className=" md:col-span-1 md:flex md:justify-end bg-gray-100 md:row-span-3">
         <nav className="text-right">
-          <div className="flex justify-between items-center ">
+          <div className=" flex justify-between items-center ">
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
               <Link href="/navBar">
                 <a>Menu</a>
