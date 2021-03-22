@@ -2,16 +2,18 @@ import React from "react";
 import Layout from "../../components/layout/Layout";
 
 const notes = () => {
+  const handleChange = () => {};
   return (
     <Layout>
       <section>
         <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
+          onChange={handleChange}
+          cols="10"
+          rows="50"
           placeholder="What do you do Nigga?"
-        ></textarea>
+        >
+          Write something here
+        </textarea>
       </section>
     </Layout>
   );

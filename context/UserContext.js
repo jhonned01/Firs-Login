@@ -13,8 +13,8 @@ function UserProvider({ children }) {
     setUser(User);
     const UserInto = User.user;
     setUserCredential(UserInto);
-    console.log("2===================================");
-    console.log(User);
+    console.log("2c===================================");
+    console.log(UserInto);
     console.log("====================================");
   };
 

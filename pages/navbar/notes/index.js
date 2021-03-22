@@ -1,14 +1,6 @@
-import React from "react";
-import Layout from "../../../components/layout/Layout";
-
+import Notes from "../../../components/notes/Index";
 const notes = () => {
-  return (
-    <Layout>
-      <section className="bg-yellow-500">
-        <textarea placeholder="What do you do Nigga?"></textarea>
-      </section>
-    </Layout>
-  );
+  return <Notes />;
 };
 
 export default notes;

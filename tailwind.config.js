@@ -7,10 +7,14 @@ module.exports = {
       "1/2": "50%",
       "3/4": "66%",
       xl: " 36rem",
+      "3xl": "56rem",
+      md: "28rem;",
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ["disabled"],
+    },
   },
   plugins: [],
 };

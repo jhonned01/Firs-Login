@@ -42,18 +42,18 @@ const Login = () => {
 
   return (
     <div className="bg-gray-200 ">
-      <section className="grid place-items-center place-content-center h-screen bg-gray-200 shadow-sm  sm:bg-gray-50 sm:max-w-xl  sm:border-2 sm:rounded-sm sm:mx-auto">
+      <section className=" grid place-items-center place-content-center md:max-w-3xl bg-gray-200 shadow-sm  sm:bg-gray-50 sm:max-w-xl  sm:border-2 sm:rounded-sm sm:mx-auto h-screen">
         <VscAccount size={50} color={"black"} />
 
         <h1 className="text-3xl my-4 ">
-          <p className="">Sing In</p>
+          <p className="text-3xl font-semibold">Sing In</p>
         </h1>
         <button
           className="flex items-center bg-blue-800 h-10 rounded-lg w-52"
           onClick={handleClickFace}
         >
           <AiFillFacebook size={30} color={"white"} />
-          <p className="text-white px-1">Sing Up With Facebook</p>
+          <p className="text-white px-1 ">Sing Up With Facebook</p>
         </button>
         <p className="text-gray-500 m-1">-- or --</p>
 
